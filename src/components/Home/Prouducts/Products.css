@@ -1,0 +1,431 @@
+/* .ln-head{
+    font-size:30px;
+    text-align:'center';
+     padding-top:'40px';
+     height:'0px';
+     width:'100%;
+} */
+.First{
+  width: 100%;
+  position: static;
+}
+.maincard{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 19%;
+    height: 380px;
+    position:static;
+    margin-left: 5%;
+    float: left;
+}
+.maincard .card1{
+   
+    position: relative;
+    width: 100%;
+    height: 95%;
+    box-shadow: 1px 1px 5px 1px brown;
+    border-radius:4%;
+    background-color: rgb(224, 224, 203);
+
+    /* background: #232323; */
+    overflow: hidden;
+    float:left;
+    margin-right:5%  
+}
+.maincard .card1 .Img{
+    padding:20px 0px 10px 0px;
+    height: 86%;
+    width: 105%;
+    transition: ease;
+    position: absolute;
+    transition-duration: 0.5s;
+    transition-delay: 0.s;
+}
+
+ .maincard .card1:hover .Img {
+    padding:10px 0px 20px 0px;
+    display: absolute;
+    transition: 0.8;
+    transition-delay: 0.1s;
+    height: 75%;
+    width: 100%;
+    
+}
+
+.maincard .card1::before{
+   
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(218, 23, 23);
+
+    /* background-color: slateblue; */
+    /* background: #9bdc25; */
+    clip-path: circle(76% at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.maincard .card1:hover::before{
+    clip-path: circle(88% at 80% -5%);
+    
+}
+.maincard .card1 .TextContent{
+   
+     position:absolute;
+     bottom: 0;
+     width: 100%;
+     height: 100px;
+     text-align: center;
+     transition: 1s;
+     z-index: index 10;
+     transition-delay:0.2s ;
+
+}
+.maincard .card1:hover .TextContent{
+    height: 160px;
+    
+}
+.maincard .card1 .TextContent .Name{
+
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: darkblue;
+    font-size: 20px;
+    padding-top: 20%;
+}
+/* .maincard .card1 .TextContent:hover .Name{
+    padding-top: 35px;
+} */
+
+.maincard .card1 .TextContent .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(218, 23, 23);
+    border-radius: 4px;
+    margin-top:10px;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: 200;
+    color:#fff;
+    border-radius: 8%;
+    opacity: 0;
+    transform:  translateY(50px);
+    transition: 0.5s;
+}
+.maincard .card1:hover .TextContent .btn{
+    opacity: 1;
+    transform: translateY(0px);
+    cursor: pointer;
+}
+/*optimizing screen sizes for card **/
+
+
+@media screen  and (min-width:1000px) and (max-width:1340px) {
+  .maincard{
+      height: 320px;
+     
+  }
+  .maincard .card1 .TextContent .Name{
+     font-size: 18px;
+     padding-top: 25%;
+  }
+  .maincard .card1 .TextContent .btn{
+
+    width: 10;
+    height: 35px;
+   padding: 5px 10px;
+  }
+}
+
+@media screen  and (min-width:1000px) and (max-width:1150px) {
+    .maincard{
+        height: 280px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 14px;
+       padding-top: 33%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+      width: 6;
+      height: 32px;
+      margin-left: 2%;
+     padding: 5px 10px;
+     font-size: 12px;
+    }
+  }
+  @media screen  and (min-width:850px) and (max-width:1000px) {
+    .maincard{
+        height: 270px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 14px;
+       padding-top: 35%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+      width: 6;
+      height: 32px;
+      margin-left: 2%;
+     padding: 5px 5px;
+     font-size: 10px;
+    }
+  }
+  @media screen  and (min-width:600px) and (max-width:850px) {
+    .maincard{
+        height: 250px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 12px;
+       padding-top: 42%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+  
+      height: 26px;
+      margin-left: 2%;
+     padding: 5px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 10px;
+    }
+  }
+  @media screen  and (min-width:600px) and (max-width:770px) {
+    .maincard{
+        height: 240px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 10px;
+       padding-top: 48%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+     
+      height: 20px;
+      margin-left: 1%;
+     padding: 2px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 8px;
+    }
+  }
+  @media screen  and (min-width:715px) and (max-width:770px) {
+    .maincard{
+      
+        height: 240px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 10px;
+       padding-top: 52%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+     
+      height: 20px;
+      margin-left: 1%;
+     padding: 2px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 9px;
+    }
+  }
+  @media screen  and (min-width:660px) and (max-width:715px) {
+    .maincard{
+      
+        height: 220px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 9px;
+       padding-top: 56%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+   
+      height: 18px;
+      margin-left: 1%;
+     padding: 2px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 8px;
+    }
+    .maincard .card1:hover .TextContent{
+        height: 130px;
+        
+    }
+  }
+  @media screen  and (min-width:400px) and (max-width:660px) {
+    .maincard{
+      
+        height: 220px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 9px;
+       padding-top: 56%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+   
+      height: 20px;
+      margin-left: 1%;
+     padding: 4px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 7px;
+    }
+    .maincard .card1:hover .TextContent{
+        height: 130px;
+        
+    }
+  }
+  
+ 
+  @media screen  and (min-width:0px) and (max-width:620px) {
+    .maincard{
+      
+        height: 160px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 7px;
+       padding-top: 74%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+  
+      height: 13px;
+      font-weight: 100;
+      margin-left: 1.5%;
+     padding: 2px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 4px;
+    }
+    .maincard .card1:hover .TextContent{
+        height: 130px;
+        
+    }
+  }
+  
+  @media screen  and (min-width:0px) and (max-width:580px) {
+    .maincard{
+      
+        height: 150px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 6px;
+       padding-top: 86%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+  
+      height: 13px;
+      font-weight: 100;
+      margin-left: 1.5%;
+     padding: 2px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 4px;
+    }
+    .maincard .card1:hover .TextContent{
+        height: 120px;
+        
+    }
+  }
+  @media screen  and (min-width:420px) and (max-width:500px) {
+    .maincard{
+      
+        height: 130px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 5px;
+       padding-top: 105%;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+  
+      height: 13px;
+      font-weight: 100;
+      margin-left: 1.5%;
+     padding: 2px 5px ;
+     margin-top: 10px;
+     padding-bottom: 0px;
+     font-size: 3px;
+    }
+    .maincard .card1:hover .TextContent{
+        height: 120px;
+        
+    }
+ 
+ 
+  }
+  @media screen  and (min-width:0px) and (max-width:420px) {
+    .maincard{
+      
+        height: 120px;
+       
+    }
+    .maincard .card1 .TextContent .Name{
+       font-size: 4px;
+       padding-top: 86px;
+  
+    }
+    .maincard .card1 .TextContent .btn{
+  
+  
+      height: 10px;
+      font-weight: 100;
+      margin-left: 1.5%;
+     padding: 2px 5px ;
+     margin-top: 4px;
+     padding-bottom: 0px;
+     font-size: 2px;
+    }
+    .maincard .card1:hover .TextContent{
+        height: 120px;
+        
+    }
+   
+  }
+   /* heading css */
+  div.example{
+        font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
+
+  }
+  
+
+ @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 20px;
+    }
+  }

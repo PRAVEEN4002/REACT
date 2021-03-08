@@ -1,0 +1,51 @@
+.container{
+    margin-top:65px;
+}
+.M1{
+    padding-top: 3px;
+    width: 100%;
+    height: 30px;
+    box-shadow: slateblue 1px 0.5px 5px 1px;
+
+    background-color:rgb(246, 235, 235);
+}
+.M-Cart{
+    width: 100%;
+    height: 120px;
+    box-shadow: slateblue 1px 0.5px 5px 1px;
+        float: left;
+    background-color:rgb(246, 235, 235);
+}
+.S-Cart{
+    width: 100%;
+    height: 200px;
+    box-shadow:  0.1px 0.5px 2px 0.1px;
+    padding-left: 5%;
+    padding-top: 5px;
+    background-color:rgb(246, 235, 235);
+
+}
+.Cart-im{
+    width: 60%;
+    height: 80px;
+    margin-top:8px;
+}
+.Cart-bx{
+  width: 25%;
+  height: 95%;
+  float: left;
+  
+}
+.P-Name{
+    margin-left: 5px;
+}
+.Cart-H{
+    color: darkblue;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.remove{
+    color: blue;
+    /* margin-top: 40px; */
+    font-size: 20px;
+}

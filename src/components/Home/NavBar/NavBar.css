@@ -1,0 +1,59 @@
+
+.PP{
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: orange 1px 1px 5px 1px;
+  float: right;
+ 
+}
+
+.HomeIcon{
+    height: 100%;
+
+  
+    width: 100%;
+    object-fit: none;
+    padding-right: 1px;
+    object-position: 10% 5%;
+    transition-delay: 0.8;
+    box-shadow: 1px 5px 1px 1px red;
+}
+.brand{
+  border-radius: 10%;
+  /* height: 20px;
+  width: 50px; */
+  border: 1px solid black;
+  color: darkblue;
+  margin-top: 12px;
+  font-size: 35x;
+  margin-left: 10%;
+}
+.HomeIcon:hover{
+  object-position:-10% 60%; 
+}
+
+.hoverlist{
+  width: 100%;
+  height: 160px;
+  background-color: white;
+  position: absolute;
+}
+.collapse{
+  box-shadow: 5px 2px 1px 1px;
+  border-top: 1px solid red;
+}
+
+a{
+  color: darkblue darkred white ;
+   font-weight: 600;
+}
+.HEADER{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 5;
+}
+
